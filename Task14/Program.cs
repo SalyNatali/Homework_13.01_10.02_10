@@ -16,6 +16,6 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 bool result = Multiple(number);
 
-if (result == true) Console.WriteLine("да");
+if (result) Console.WriteLine("да");
 else Console.WriteLine("нет");
 
