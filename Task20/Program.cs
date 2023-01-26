@@ -19,12 +19,11 @@ Console.Write("Y2: ");
 int y2 = Convert.ToInt32(Console.ReadLine());
 
 double distance = Distance (x1, y1, x2, y2);
-double distance1 = Math.Round(distance, 2, MidpointRounding.ToZero);
-Console.Write($"Расстояние между точками {distance1}");
+double distanceRound = Math.Round(distance, 2, MidpointRounding.ToZero);
+Console.Write($"Расстояние между точками {distanceRound}");
 
-double Distance (int a1, int b1, int a2, int b2)
+double Distance (int xa1, int ya1, int xa2, int ya2)
 {
-    double result = Math.Sqrt(Math.Pow((a2-a1), 2) + Math.Pow((b2-b1), 2));
-    return result;
+    return Math.Sqrt(Math.Pow((xa2 - xa1), 2) + Math.Pow((ya2 - ya1), 2));
 }
 
